@@ -1,0 +1,14 @@
+__ci_last_regenerate|i:1722237144;_ci_previous_url|s:51:"http://localhost:8080/index.php/auth/forgotPassword";msg|s:611:"Failed to send OTP. Please try again. Error: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:07:01 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73f954ffe34.73944307@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>";__ci_vars|a:1:{s:3:"msg";s:3:"old";}

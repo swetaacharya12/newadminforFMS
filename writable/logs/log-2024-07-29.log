@@ -1,0 +1,599 @@
+INFO - 2024-07-29 06:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 06:37:35 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/forgotPassword]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 06:42:09 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/forgotPassword]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 06:42:12 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/forgotPassword]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 06:42:13 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/forgotPassword]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 06:42:20 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/login/]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 06:42:31 --> ErrorException: Cannot redeclare App\Controllers\Auth::forgotPassword()
+[Method: GET, Route: auth/login]
+in APPPATH\Controllers\Auth.php on line 89.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-07-29 06:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 06:44:38 --> Error: Class "App\Controllers\Time" not found
+[Method: POST, Route: auth/sendOtp]
+in APPPATH\Controllers\Auth.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\newadminforFMS\\public\\index.php')
+ERROR - 2024-07-29 06:46:18 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(120): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:46:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:46:18 --> 
+INFO - 2024-07-29 06:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:46:31 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(120): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:46:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:46:31 --> 
+INFO - 2024-07-29 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:49:33 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(120): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:49:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:49:33 --> 
+INFO - 2024-07-29 06:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:49:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(120): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:49:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:49:42 --> 
+INFO - 2024-07-29 06:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:53:49 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(121): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:53:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:53:49 --> 
+ERROR - 2024-07-29 06:53:49 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 06:53:49 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73c7da78739.15414820@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 06:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:54:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(121): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:54:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:54:51 --> 
+ERROR - 2024-07-29 06:54:51 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 06:54:51 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73cbb795f06.36151089@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 06:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 06:57:32 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(121): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 06:57:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 06:57:32 --> 
+ERROR - 2024-07-29 06:57:32 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 06:57:32 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73d5c4e8379.96785806@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 06:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:00:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(121): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:00:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:00:15 --> 
+ERROR - 2024-07-29 07:00:15 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:00:15 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73dffa5b376.65055311@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:01:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(121): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:01:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:01:01 --> 
+ERROR - 2024-07-29 07:01:01 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:01:01 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73e2d3bfa52.40358846@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:05:32 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:05:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:05:32 --> 
+ERROR - 2024-07-29 07:05:32 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:05:32 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73f3c46f2f8.49191714@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:07:01 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:07:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:07:01 --> 
+ERROR - 2024-07-29 07:07:01 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:07:01 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a73f954ffe34.73944307@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:12:35 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:12:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:12:35 --> 
+ERROR - 2024-07-29 07:12:35 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:12:35 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a740e39518e5.59001380@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 07:23:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 07:23:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 07:23:30 --> 
+ERROR - 2024-07-29 07:23:30 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 07:23:30 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a743724147d3.25765069@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 07:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 10:36:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 10:36:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 10:36:30 --> 
+ERROR - 2024-07-29 10:36:30 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 10:36:30 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a770ae807cc6.40600346@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 10:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 10:36:58 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 10:36:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 10:36:58 --> 
+ERROR - 2024-07-29 10:36:58 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 10:36:58 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a770ca14d456.06286439@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 10:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 10:44:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.example.com failed: No such host is known.  in C:\xampp\htdocs\newadminforFMS\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1896)
+#1 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1896): fsockopen('smtp.example.co...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\newadminforFMS\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\newadminforFMS\app\Controllers\Auth.php(123): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(933): App\Controllers\Auth->sendOtp()
+#7 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\newadminforFMS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\newadminforFMS\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\newadminforFMS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\newadminforFMS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\newadminforFMS\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-07-29 10:44:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-29 10:44:51 --> 
+ERROR - 2024-07-29 10:44:51 --> Failed to send OTP: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 29 Jul 2024 10:44:51 +0000
+To: swetaacharya890@gmail.com
+From: &quot;sweta&quot; &lt;swetaacharya890@gmail.com&gt;
+Return-Path: &lt;swetaacharya890@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20OTP?=
+Reply-To: &lt;swetaacharya890@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: swetaacharya890@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66a772a35bd8a5.77637525@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-07-29 10:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 10:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
